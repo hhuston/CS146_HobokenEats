@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navigation">
+    <button href="index.html">Home</button>
+    <button href="allrestaurants.html">Restaurants</button>
+    <button href="quiz.html">Quiz</button>
+    <button href="reviews.html">Reviews</button>
+    <button href="about.html">About</button>
+    <input id="search" type="text" name="search" placeholder="Search restaurants">
+  </div>
+  
+    <h1><center>Quiz</center></h1>
+    <q>Question 1: What type of cuisine are you in the mood for?</q>
+    <br>
+    <br>
+
+  <div>
+        <p3>a. Latin</p3>
+        <br>
+        <p3>b. Asian</p3>
+        <br>
+        <p3>c. Italian</p3>
+  <div>
+    <br>
+    <br>
+    <br>
+    <q>Question 2: What is your price point?</q>
+    <br>
+    <br>
+  <div>
+    <p3>a. $<p3>
+        <br>
+    <p3>b. $$</p3>
+        <br>
+    <p3>c. $$$</p3>
+  <div>
