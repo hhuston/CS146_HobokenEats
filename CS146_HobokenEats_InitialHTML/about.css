@@ -5,7 +5,8 @@ body {
 
 p {
     font-size: 20px;
-    color: #ffeaca;
+    color: black;
+    text-align: center;
 }
 
 img {
