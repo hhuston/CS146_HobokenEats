@@ -1,11 +1,11 @@
 body {
-    background-color: #949594;
+    background-color: #ffeaca;
     font-family:'Trebuchet MS', sans-serif;
 }
 
 p {
     font-size: 20px;
-    color: #949594;
+    color: #ffeaca;
 }
 
 img {
@@ -44,12 +44,16 @@ input {
 }
 
 .navigation button:hover {
-    background-color: #949594;
+    background-color: #ffeaca;
     color: #9D1535;
     cursor: pointer;
     border: 1% solid #9d1535;
 
     transition: background-color 500ms, color 500ms, border 500ms;
+}
+.intro {
+    padding-top: 50px;
+    padding-left: 150px;
 }
 
 .right_image {
