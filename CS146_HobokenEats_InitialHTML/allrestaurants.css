@@ -55,13 +55,9 @@ input {
     transition: background-color 500ms, color 500ms, border 500ms;
 }
 
-.right_image {
-    margin-right: 10%;
-    float: right;
-}
-
 table img {
-    width: 100%;
+
+    width: 50vmax;
     height: 100%;
     border: none;
 }
@@ -69,23 +65,18 @@ table img {
 table {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
-
-q {
-    font-size: 22px;
-    color: #9d1535;
+.p, .pp, .ppp, .Latin, .Asian, .American, .Italian{
+    display: table-cell;
 }
 
-p2 {
-    font-size: larger;
-    color: black;
+ul {
+    list-style-type: none;
 }
 
-p3 {
-    line-height: 2;
-}
-
-p4 {
-    line-height: 20;
+#checkboxes {
+    margin-left: auto;
+    margin-right: auto;
 }
