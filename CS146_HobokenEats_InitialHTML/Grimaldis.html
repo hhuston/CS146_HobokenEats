@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="reviews.css">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <script src="nav.js"></script>
+  <script src="restaurant.js"></script>
 </head>
 
 <body>
@@ -35,8 +36,16 @@
   <!-- <img src="https://cdn-icons-png.flaticon.com/512/2447/2447631.png" alt="Menu"> -->
   <div class="description">
     <p>Click <a href = "https://www.grimaldispizzeria.com/menu/">Here</a> To View Menu </p>
-    <p><strong>User Comments:</strong></p>
-    <p>This is where user comments would go (there can add them here</p>
+    <div class="comments">
+      <h2>User Comments:</h2>
+      <ol id="comments3">
+        <li>Great Pizza!</li>
+        <li>Staff were wonderful</li>
+      </ol>
+      <input type="text" class="inputForm" placeholder="Enter Comment Here!" id="newComment3">
+      <button onclick="submitGrimaldis()">Submit</button>
+      
+    </div>
   </div>
   <div class="mapouter">
     <div class="gmap_canvas">

@@ -2,16 +2,20 @@
 <head>
   <link rel="stylesheet" href="reviews.css">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <script src="nav.js"></script>
+  <script src="restaurant.js"></script>
 </head>
 
 <body>
   <div class="navigation">
-    <button> <a href="index.html">Home</a> </button>
-    <button> <a href="allrestaurants.html">Restaurants</a> </button>
-    <button> <a href="newQuiz.html">Quiz</a> </button>
-    <button> <a href="reviews.html">Reviews</a> </button>
-    <button> <a href="about.html">About</a> </button>
-    <input id="search" type="text" name="search" placeholder="Search restaurants">
+    <nav>
+      <button onclick="goIndex()">Home</button>
+      <button onclick="goRestaurants()">Restaurants</button>
+      <button onclick="goQuiz()">Quiz</button>
+      <button onclick="goReviews()">Reviews</button>
+      <button onclick="goAbout()">About</button>
+      <input id="search" type="text" name="search" placeholder="Search restaurants">
+    </nav>
   </div>
   <h1>
     <center>Charritos</center>
@@ -31,8 +35,16 @@
   <!-- <img src="https://cdn-icons-png.flaticon.com/512/2447/2447631.png" alt="Menu"> -->
   <div class="description">
     <p>Click <a href = "http://loscharritos.com/index.php/midtown-hoboken/">Here</a> To View Menu </p>
-    <p><strong>User Comments:</strong></p>
-    <p>This is where user comments would go (there can add them here</p>
+    <div class="comments">
+      <h2>User Comments:</h2>
+      <ol id="comments2">
+        <li>Great guac!</li>
+        <li>Love the atmosphere</li>
+      </ol>
+      <input type="text" class="inputForm" placeholder="Enter Comment Here!" id="newComment2">
+      <button onclick="submitCharritos()">Submit</button>
+      
+    </div>
   </div>
   <div class="mapouter">
     <div class="gmap_canvas">

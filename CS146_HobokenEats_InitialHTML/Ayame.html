@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="reviews.css">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <script src="nav.js"></script>
+  <script src="restaurant.js"></script>
 </head>
 
 <body>
@@ -35,8 +36,16 @@
   <!-- <img src="https://cdn-icons-png.flaticon.com/512/2447/2447631.png" alt="Menu"> -->
   <div class="description">
     <p>Click <a href = "http://ayamehoboken.com/menu.html">Here</a> To View Menu </p>
-    <p><strong>User Comments:</strong></p>
-    <p>This is where user comments would go (there can add them here</p>
+    <div class="comments">
+      <h2>User Comments:</h2>
+      <ol id="comments1">
+        <li>Great hibachi and I love the sushi!</li>
+        <li>Went with my gf, we had a great time</li>
+      </ol>
+      <input type="text" class="inputForm" placeholder="Enter Comment Here!" id="newComment1">
+      <button onclick="submitAyame()">Submit</button>
+      
+    </div>
   </div>
   <div class="mapouter">
     <div class="gmap_canvas">
@@ -45,8 +54,6 @@
       </iframe><a href="https://123movies-to.org"></a><br><a href="https://www.embedgooglemap.net"></a>
     </div>
   </div>
- 
-  <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=518%20Washington%20Street&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google embed code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div> -->
 </body>
 
 
