@@ -3,6 +3,7 @@
   <meta name="quiz" content="width=device-width,initial scale=1"/>
   <link rel="stylesheet" href="style.css">
   <script src="nav.js"></script>
+  <script src="newQuiz.js"></script>
 </head>
 
 <body>
@@ -18,27 +19,47 @@
   </div>
   
     <h1><center>Quiz</center></h1>
-    <q>Question 1: What type of cuisine are you in the mood for?</q>
-    <br>
-    <br>
+    <div class="quiz">
 
-  <div>
-        <p3>a. Latin</p3>
-        <br>
-        <p3>b. Asian</p3>
-        <br>
-        <p3>c. Italian</p3>
-  <div>
-    <br>
-    <br>
-    <br>
-    <q>Question 2: What is your price point?</q>
-    <br>
-    <br>
-  <div>
-    <p3>a. $<p3>
-        <br>
-    <p3>b. $$</p3>
-        <br>
-    <p3>c. $$$</p3>
-  <div>
+    <form id="crisis">
+    <q>Q1: What is your usual go-to cuisine type?</q><br>
+    <input type="radio" id="latin" name="type" value="5">
+    <label for="latin">Latin</label><br>
+    <input type="radio" id="italian" name="type" value="10">
+    <label for="italian">Italian</label><br>
+    <input type="radio" id="usa" name="type" value="1">
+    <label for="usa">American</label>
+
+      <br>  
+
+      <q>Q2: What is your budget for this meal?</q><br>
+      <input type="radio" id="cheap" name="money" value="1">
+      <label for="cheap">$</label><br>
+      <input type="radio" id="mid" name="money" value="2">
+      <label for="mid">$$</label><br>  
+      <input type="radio" id="rich" name="money" value="5">
+      <label for="rich">$$$</label><br>
+
+      <q>Q3: Do you feel like sticking to the usual today, or trying something new?</q><br>
+      <input type="radio" id="same" name="energy" value="2">
+      <label for="same">Stick to the usual</label><br>
+      <input type="radio" id="dif" name="energy" value="1">
+      <label for="dif">Try something new</label><br>  
+      <input type="radio" id="not" name="energy" value="0">
+      <label for="not">I'm not sure</label><br>
+
+      <q>Q4: How far are you willing to travel from campus?</q><br>
+      <input type="radio" id="close" name="mood" value="2">
+      <label for="close">Not far at all</label><br>
+      <input type="radio" id="eh" name="mood" value="3">
+      <label for="eh">A few blocks max</label><br>  
+      <input type="radio" id="far" name="mood" value="1">
+      <label for="far">I can walk</label><br><br>
+      <input type="submit" value="Submit" onclick="sadTimes()"><br>
+    </form>
+      
+    </div>
+    
+    <div id="quiz-result"></div>
+</body>
+</html>
