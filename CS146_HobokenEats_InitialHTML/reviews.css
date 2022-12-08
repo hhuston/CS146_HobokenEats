@@ -52,10 +52,10 @@ input {
     transition: background-color 500ms, color 500ms, border 500ms;
 }
 
-.right_image {
+/* .right_image {
     margin-right: 10%;
     float: right;
-}
+} */
 
 table img {
     width: 100%;
