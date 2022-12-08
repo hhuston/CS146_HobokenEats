@@ -2,48 +2,68 @@
 <head>
   <link rel="stylesheet" href="reviews.css">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <script src="reviews.js"></script> 
 </head>
 
 <body>
-  <div class="navigation">
-    <button> <a href="index.html">Home</a> </button>
-    <button> <a href="allrestaurants.html">Restaurants</a> </button>
-    <button> <a href="newQuiz.html">Quiz</a> </button>
-    <button> <a href="reviews.html">Reviews</a> </button>
-    <button> <a href="about.html">About</a> </button>
-    <input id="search" type="text" name="search" placeholder="Search restaurants">
-  </div>
-  <h1>
-    <center>Charritos</center>
-  </h1>
-  <hr>
-  <img class="right_image"
-    src="https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1500827880942-PO8CMQCJUA4Q6C89VUU5/image-asset.jpeg?format=750w"
-    alt="Charritos">
-  <div class="description">
-    <p><strong>Price:</strong> $$ </p>
-    <p><strong>Rating:</strong> 4/5 </p>
-    <p><strong>Team Review:</strong></p>
-    <p>Charritos is an amazing Mexican resturant with delicious food and an impressive atmosphere. </p>
-    <p>The food is moderately priced and is great for a night out with friends or a date! </p>
-  </div>
-  <!-- <img src="https://cdn-icons-png.flaticon.com/512/2447/2447631.png" alt="Menu"> -->
-  <div class="description">
-    <p>Click <a href = "http://loscharritos.com/index.php/midtown-hoboken/">Here</a> To View Menu </p>
-    <p><strong>User Comments:</strong></p>
-    <p>This is where user comments would go (there can add them here</p>
-  </div>
-  <div class="mapouter">
-    <div class="gmap_canvas">
-      <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=518%20Washington%20Street&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-      </iframe><a href="https://123movies-to.org"></a><br><a href="https://www.embedgooglemap.net"></a>
+    <div class="navigation">
+      <nav>
+        <button> <a href="index.html">Home</a> </button>
+      <button> <a href="allrestaurants.html">Restaurants</a> </button>
+      <button> <a href="newQuiz.html">Quiz</a> </button>
+      <button> <a href="reviews.html">Reviews</a> </button>
+      <button> <a href="about.html">About</a> </button>
+      <input id="search" type="text" name="search" placeholder="Search restaurants">
+      </nav>
     </div>
-  </div>
- 
-  <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=518%20Washington%20Street&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google embed code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div> -->
+
+    <h1>
+      <center>Reviews</center>
+    </h1>
+
+<p>Collapsible Set:</p>
+<button type="button" class="collapsible" onclick="collapse()"><h2>Charritos</h2></button>
+<div class="content">
+  <q>Charritos is an Mexican-inspired latin restaurant with a wide variety of flavors.
+  The menu contains many classics, but also boasts many American-influenced options for a diverse dining experience.
+  The guacamole is made to order, the food is very fresh, and the service is quick and generous.</q>
+  <h3>Click <a href = "Charritos.html">Here</a> To Learn More</h3>
+</div>
+<button type="button" class="collapsible" onclick="collapse()"><h2>Karma Kafe</h2></button>
+<div class="content">
+  <q>Karma Kafe's consistent quality of traditional Indian cuisine makes it the perfect spot for a filling dinner.
+  The menu is very big, contains common vegetarian and vegan menu items, and is perfect for people with dietary restrictions.
+  The food servings are large and reasonably priced, a definite go-to for a sit-in meal.</q>
+  <h3>Click <a href = "Karma.html">Here</a> To Learn More</h3>
+</div>
+<button type="button" class="collapsible" onclick="collapse()"><h2>Shake Shack</h2></button>
+<div class="content">
+  <q>Shake Shack is notorious for its tasty burger options, but they are pretty average across the board.
+  It is a good spot for a quick meal on the go, and the app allows you to get discounts from time to time.
+  The shakes and sides are the highlight of the meal, and are definitely recommended!</q>
+  <h3>Click <a href = "ShakeShack.html">Here</a> To Learn More</h3>
+</div>
+<button type="button" class="collapsible" onclick="collapse()"><h2>Ayame</h2></button>
+<div class="content">
+  <q>Ayame's interior allows for an impressive dining atmosphere, but it sushi leaves much to be desired. 
+  Despite some flavorful signature rolls, the original and vegetarian options are not as top-notch.
+  The meals are priced fairly, and the hibachi dinner and specials are really tasty.</q>
+  <h3>Click <a href = "Ayame.html">Here</a> To Learn More</h3>
+</div>
+<button type="button" class="collapsible" onclick="collapse()"><h2>O'Bagel</h2></button>
+<div class="content">
+  <q>O'Bagel is probably the best place in the city for fresh bagels and breakfast sandwiches.
+  Although a bit on the pricier side, it is the perfect takout spot for a tasty breakfast.
+  The quality is excellent, but if you hate waiting in a crowded store, make sure you order ahead!</q>
+  <h3>Click <a href = "Obagel.html">Here</a> To Learn More</h3>
+</div>
+<button type="button" class="collapsible" onclick="collapse()"><h2>Grimaldi's</h2></button>
+<div class="content">
+  <q>Grimaldi's is the perfect balance between classic Italian and American trends.
+  The food is expensive, but great for a special night out with friends or a date!
+  The atmosphere is classy, and the diverse menu options ensure there is something for everyone!</q>
+  <h3>Click <a href = "Grimaldis.html">Here</a> To Learn More</h3>
+</div>
+
 </body>
-
-
-
 </html>
