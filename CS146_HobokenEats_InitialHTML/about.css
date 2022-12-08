@@ -5,7 +5,8 @@ body {
 
 p {
     font-size: 20px;
-    color: #ffeaca;
+    color: black;
+    text-align: center;
 }
 
 img {
@@ -39,7 +40,7 @@ input {
     margin: 0% auto;
     width: 7%;
     border: 1% solid black;
-    background-color: #9D1535;
+    background-color: grey;
     font-weight: bold;
     border-radius: 5px;
     
@@ -48,9 +49,9 @@ input {
 
 .navigation button:hover {
     background-color: #ffeaca;
-    color: #9D1535;
+    color: grey;
     cursor: pointer;
-    border: 1% solid #9d1535;
+    border: 1% solid grey;
 
     transition: background-color 500ms, color 500ms, border 500ms;
 }
