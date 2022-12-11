@@ -1,6 +1,6 @@
 body {
     background-color: #ffeaca;
-    font-family:'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 p {
@@ -19,7 +19,7 @@ img {
 
 h1 {
     color: #9d1535;
-    font-size: 500%;
+    font-size: 10vw;
     font-weight: bold;
 }
 
@@ -34,15 +34,15 @@ input {
     float: left;
 }
 
-.navigation button{
+.navigation button {
     display: inline-block;
     margin: 0% auto;
-    width: 7%;
+    width: 7vw;
     border: 1% solid black;
     background-color: grey;
     font-weight: bold;
     border-radius: 5px;
-    
+
     transition: background-color 500ms, color 500ms, border 500ms;
 }
 
@@ -55,20 +55,13 @@ input {
     transition: background-color 500ms, color 500ms, border 500ms;
 }
 
-table img {
-
-    width: 50vmax;
-    height: 100%;
-    border: none;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.p, .pp, .ppp, .Latin, .Asian, .American, .Italian{
+.p,
+.pp,
+.ppp,
+.Latin,
+.Asian,
+.American,
+.Italian {
     display: table-cell;
 }
 
@@ -79,4 +72,26 @@ ul {
 #checkboxes {
     margin-left: auto;
     margin-right: auto;
+}
+
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flexbox div {
+    flex: 1 1 33%;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    #flexbox div {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    #flexbox div {
+        flex: 1 1 100%;
+    }
 }
